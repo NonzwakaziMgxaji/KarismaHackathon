@@ -1,3 +1,31 @@
+.watchSidebar {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+}
+
 .header {
-    display: flex;
+    text-align: center;
+    text-decoration: underline;
+    background-color: crimson;
+}
+
+.chart {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: cyan;
+}
+
+#chartDrop {
+    width: 25%;
+}
+
+.chartDropDiv {
+    text-align: center;
+}
+
+.selectChartDiv {
+    background-color: coral;
 }
