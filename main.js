@@ -3,6 +3,8 @@ var video2 = document.querySelector(".video2");
 var video3 = document.querySelector(".video3");
 var video4 = document.querySelector(".video4");
 
+const monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 var count = 0;
 
 var views = {
@@ -67,11 +69,12 @@ var views4 = {
 
 $("video.video1").one("play", function () {
     // event.target
+    var date = new Date();
 
-    count++
-    console.log(count);
-    if (localStorage["store"]) {
-        localStorage.setItem("store", JSON.stringify())
+    views[monthArr[date.getMonth()].toLowerCase()]++
+
+    if (localStorage["views"]) {
+        localStorage.setItem("views", JSON.stringify({ "HTML & CSS": views, JavaScript: views2, NodeJS: views3, ExpressJS: views4 }));
     }
 
 });
@@ -81,8 +84,8 @@ $("video.video2").one("play", function () {
 
     count++
     console.log(count);
-    if (localStorage["store"]) {
-        localStorage.setItem("store", JSON.stringify())
+    if (localStorage["views"]) {
+        localStorage.setItem("views", JSON.stringify())
     }
 
 });
@@ -92,8 +95,8 @@ $("video.video3").one("play", function () {
 
     count++
     console.log(count);
-    if (localStorage["store"]) {
-        localStorage.setItem("store", JSON.stringify())
+    if (localStorage["views"]) {
+        localStorage.setItem("views", JSON.stringify())
     }
 
 });
@@ -103,8 +106,8 @@ $("video.video4").one("play", function () {
 
     count++
     console.log(count);
-    if (localStorage["store"]) {
-        localStorage.setItem("store", JSON.stringify())
+    if (localStorage["views"]) {
+        localStorage.setItem("views", JSON.stringify())
     }
 
 });
