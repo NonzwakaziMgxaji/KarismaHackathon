@@ -1,31 +1,28 @@
-.watchSidebar {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 2;
-}
-
 .header {
-    text-align: center;
-    text-decoration: underline;
-    background-color: crimson;
+  padding: 1px 1px 1px 100px;
+  color: white;
+  background-color: #daad86;
+  display: flex;
+}
+/* #bc986a */
+
+.content {
+  border: #daad86 solid 5px;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
 }
 
 .chart {
-    width: 600px;
-    height: 300px;
-    margin: auto;
-    background-color: cyan;
+  width: 600px;
+  height: 300px;
+  margin: auto;
 }
 
 #chartDrop {
-    width: 25%;
+  width: 25%;
 }
 
 .chartDropDiv {
-    text-align: center;
-}
-
-.selectChartDiv {
-    background-color: coral;
+  text-align: center;
 }

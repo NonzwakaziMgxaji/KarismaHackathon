@@ -12,13 +12,20 @@
     <div class="containerAll">
       <div class="header">
         <div>
-          <h1>Watch Data:</h1>
-        </div>
-        <div>
-          <input type="image" class="watchSidebar" src="./sidebar.png" />
+          <h1>Watch Data</h1>
         </div>
       </div>
+      <br />
+      <div>
+        <!-- <input
+          style="display: none"
+          type="image"
+          class="watchSidebar"
+          src="./sidebar.png"
+        /> -->
+      </div>
       <div class="content">
+        <br />
         <div class="selectChartDiv">
           <div class="chart">
             <canvas id="selectChart"></canvas>
@@ -28,13 +35,17 @@
             <select id="chartDrop">
               <option>Yes</option>
             </select>
-            <button type="button">Add</button>  
+            <button type="button">Add</button>
             <button type="button">Remove</button>
-          </div><br>
+          </div>
+          <br />
         </div>
-        <div class="chart">
-          <canvas id="allChart"></canvas>
+        <div class="allChartDiv">
+          <div class="chart">
+            <canvas id="allChart"></canvas>
+          </div>
         </div>
+        <br />
       </div>
     </div>
   </body>
