@@ -4,16 +4,16 @@ var allctx = document.getElementById("allChart");
 const selectLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const allLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var selectData = [{
-    label: "data 1",
-    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    label: "video 1",
+    data: [11, 23, 13, 7, 10, 16, 57, 28, 19, 3, 11, 8],
     backgroundColor:
         randomBackgroud(),
     borderColor:
         randomBackgroud(),
     borderWidth: 1
 }, {
-    label: "data 2",
-    data: [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+    label: "video 2",
+    data: [2, 12, 14, 19, 8, 27, 16, 5, 24, 13, 12, 21],
     backgroundColor:
         randomBackgroud(),
     borderColor:
@@ -22,8 +22,8 @@ var selectData = [{
 }];
 
 var allData = [{
-    label: "data 1",
-    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    label: "video 1",
+    data: [2, 12, 14, 19, 8, 27, 16, 5, 24, 13, 12, 21],
     backgroundColor:
         randomBackgroud(),
     borderColor:
@@ -36,13 +36,6 @@ var selectChart = new Chart(selctx, {
     data: {
         labels: selectLabels,
         datasets: selectData
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
     }
 })
 
@@ -51,13 +44,6 @@ var allChart = new Chart(allctx, {
     data: {
         labels: allLabels,
         datasets: allData
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
     }
 })
 
