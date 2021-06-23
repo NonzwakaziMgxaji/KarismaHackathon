@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="http://code.jquery.com/jquery.js"></script>
 </head>
+
 <body>
-    <h1>Karisma with a K</h1>
-    <a href="http://127.0.0.1:5500/KarismaHackathon/watch.html">Watch Data</a>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <label class="logo">Karisma With a K</label>
+
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="uploads.html">Uploads</a></li>
+        </ul>
+    </nav>
+    <!-- <section></section> -->
+    <br>
+
+    <div class="example" style="margin:auto;max-width:700px">
+        <input type="text" placeholder="Search Video" name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+
+    <br>
+
+    <div class = "videos">
+        <video class = "video1" width="320" height="240" controls style='border: 5px solid #DAAD86'>
+            <source src="video1.mp4" type="video/mp4">
+            <source src="video1.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <p>Name:</p>
+
+        <br>
+
+        <video width="320" height="240" controls style='border: 5px solid #DAAD86'>
+            <source src="video1.mp4" type="video/mp4">
+            <source src="video1.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <p>Name:</p>
+
+        <br>
+
+        <video width="320" height="240" controls style='border: 5px solid #DAAD86'>
+            <source src="video1.mp4" type="video/mp4">
+            <source src="video1.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <p>Name:</p>
+
+        <br>
+
+        <video width="320" height="240" controls style='border: 5px solid #DAAD86'>
+            <source src="video1.mp4" type="video/mp4">
+            <source src="video1.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <p>Name:</p>
+
+        <br>
+
+    </div>
+
+    <div class="footer">
+        Karisma with a K
+    </div>
+<script src="./main.js"></script>
 </body>
+
 </html>

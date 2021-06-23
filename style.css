@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    background: #DAAD86;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a.active,a:hover{
+    background: #BC986A;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+a:hover,a.active{
+    background: none;
+    color: #BC986A;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+}
+/* section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+} */
+
+div.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #BC986A;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+  
+div.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #BC986A;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #BC986A;
+    border-left: none;
+    cursor: pointer;
+}
+  
+div.example button:hover {
+    background: #DAAD86;
+}
+  
+div.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.videos{
+    margin: 30px;
+}
+
+video{
+    padding: 10px;
+}
+
+.footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #DAAD86;
+    ;
+}
+
+p{
+    font-weight: bold;
+}
