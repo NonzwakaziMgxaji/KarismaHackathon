@@ -1,8 +1,8 @@
-var ctx = document.getElementById("selectChart");
-
-console.log(randomBackgroud());
+var selctx = document.getElementById("selectChart");
+var allctx = document.getElementById("allChart");
 
 const selectLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const allLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var selectData = [{
     label: "data 1",
     data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
@@ -21,11 +21,36 @@ var selectData = [{
     borderWidth: 1
 }];
 
-var selectChart = new Chart(ctx, {
+var allData = [{
+    label: "data 1",
+    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    backgroundColor:
+        randomBackgroud(),
+    borderColor:
+        randomBackgroud(),
+    borderWidth: 1
+}]
+
+var selectChart = new Chart(selctx, {
     type: "line",
     data: {
         labels: selectLabels,
         datasets: selectData
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+})
+
+var allChart = new Chart(allctx, {
+    type: "line",
+    data: {
+        labels: allLabels,
+        datasets: allData
     },
     options: {
         scales: {
