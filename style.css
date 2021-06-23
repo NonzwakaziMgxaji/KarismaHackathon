@@ -16,6 +16,16 @@ nav{
     width: 100%;
 }
 
+@media (max-width: 952px){
+    nav{
+        background: #DAAD86;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+
+
 label.logo{
     color: white;
     font-size: 35px;
@@ -108,11 +118,6 @@ a:hover,a.active{
     left: 0;
 }
 }
-/* section{
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-} */
 
 div.example input[type=text] {
     padding: 10px;
@@ -145,12 +150,16 @@ div.example::after {
     display: table;
 }
 
-.videos{
-    margin: 30px;
+.video{
+    padding: 10px;
+    display: flex;
 }
 
-video{
-    padding: 10px;
+.video h2{
+    padding-top: 20px;
+}
+.video1, .video2, .video3, .video4{
+    margin: 30px;
 }
 
 .footer {
@@ -160,10 +169,15 @@ video{
     width: 100%;
     height: 40px;
     background: #DAAD86;
-    ;
 }
 
-p{
+h2{
     font-weight: bold;
-    margin:10px;
+    margin: 1px;
 }
+
+.text{
+    padding: 10px;
+}
+
+
