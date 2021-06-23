@@ -1,7 +1,7 @@
 var selctx = document.getElementById("selectChart");
 var allctx = document.getElementById("allChart");
 
-// localStorage.setItem("views", JSON.stringify({ view1: views, view2: views2, view3 : views3, view4 : views4}));
+localStorage.setItem("views", JSON.stringify({ view1: views, view2: views2, view3 : views3, view4 : views4}));
 
 const selectLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var selectData = [{
