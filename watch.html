@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Watch data</title>
+  </head>
+  <body>
+    <div class="containerAll">
+      <div class="header">
+        <div>
+          <h1>Watch Data</h1>
+        </div>
+      </div>
+      <br />
+      <div>
+        <!-- <input
+          style="display: none"
+          type="image"
+          class="watchSidebar"
+          src="./sidebar.png"
+        /> -->
+      </div>
+      <div class="content">
+        <br />
+        <div class="selectChartDiv">
+          <div class="chart">
+            <canvas id="selectChart"></canvas>
+          </div>
+          <br />
+          <div class="chartDropDiv">
+            <select id="chartDrop">
+              <option>Yes</option>
+            </select>
+            <button type="button">Add</button>
+            <button type="button">Remove</button>
+          </div>
+          <br />
+        </div>
+        <div class="allChartDiv">
+          <div class="chart">
+            <canvas id="allChart"></canvas>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </body>
+  <script src="./viewgraph.js"></script>
+</html>
