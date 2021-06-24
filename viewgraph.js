@@ -60,7 +60,8 @@ for (var i = 0; i < objLength.length; i++) {
     });
 }
 
-var selectChart = new Chart(selctx, {
+var selectChart = new Chart(
+    document.getElementById("selectChart"), {
     type: "line",
     data: {
         labels: selectLabels,
@@ -83,29 +84,27 @@ function randomBackgroud() {
 }
 
 chartAdd.addEventListener("click", () => {
-    console.clear();
     var keySelectData2 = [];
 
     selectString = viewSelect.value;
     selectData = [];
 
-        var selectedView = viewObj[selectString];
-        var subKeys = Object.keys(selectedView);
-        for (var j = 0; j < subKeys.length; j++) {
-            var currMonth = subKeys[j];
-            keySelectData2[j] = (selectedView[currMonth]);
-            console.log(keySelectData2);
-        }
+    var selectedView = viewObj[selectString];
+    var subKeys = Object.keys(selectedView);
+    for (var j = 0; j < subKeys.length; j++) {
+        var currMonth = subKeys[j];
+        keySelectData2[j] = (selectedView[currMonth]);
+    }
 
-        selectData = [{
-            label: selectString,
-            data: keySelectData2,
-            backgroundColor:
-                randomBackgroud(),
-            borderColor:
-                randomBackgroud(),
-            borderWidth: 1
-        }]
+    selectData = [{
+        label: selectString,
+        data: keySelectData2,
+        backgroundColor:
+            randomBackgroud(),
+        borderColor:
+            randomBackgroud(),
+        borderWidth: 1
+    }]
 
     selectChart.destroy();
 
