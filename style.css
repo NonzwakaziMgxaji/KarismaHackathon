@@ -24,7 +24,13 @@ nav{
     }
 }
 
-
+@media (max-width: 528px){
+    nav{
+        background: #DAAD86;
+        height: 80px;
+        width: 100%;
+    }
+}
 
 label.logo{
     color: white;
@@ -180,4 +186,9 @@ h2{
     padding: 10px;
 }
 
+@media (max-width: 600px){
+    .video, .text{
+        display: block;
+    }
+}
 
