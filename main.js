@@ -10,6 +10,7 @@ var video2 = document.querySelector(".video2");
 var video3 = document.querySelector(".video3");
 var video4 = document.querySelector(".video4");
 
+
 const monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 var count = 0;
