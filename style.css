@@ -222,8 +222,8 @@ h2{
         width: 80%;
     }
     .about{
-        margin-top: 5px;
-         padding: 5px 15px;
+        margin: auto;
+         padding: 5px ;
     }
     .about p{
         text-align: center;
