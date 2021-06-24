@@ -140,4 +140,3 @@ console.log(listItems);
 list.addEventListener("click", function (event) {
     alert("hi")
 })
-
