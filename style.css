@@ -14,6 +14,7 @@ nav{
     background: #DAAD86;
     height: 80px;
     width: 100%;
+    /* margin-bottom: 5px; */
 }
 
 @media (max-width: 952px){
@@ -223,6 +224,9 @@ h2{
     .about{
         margin-top: 5px;
          padding: 5px 15px;
+    }
+    .about p{
+        text-align: center;
     }
 }
 
