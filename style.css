@@ -191,7 +191,20 @@ h2{
 .text{
     padding: 10px;
 }
-
+.about{
+    height: 50%;
+    width: 70%;
+    /* border: 5px solid #DAAD86; */
+    padding: 10px 30px;
+    font-size: larger;
+    text-align: justify;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+}
 @media (max-width: 425px){
     .video, .text{
         display: block;
@@ -207,20 +220,11 @@ h2{
         text-align: justify;
         width: 80%;
     }
+    .about{
+        margin-top: 5px;
+         padding: 5px 15px;
+    }
 }
 
-.about{
-    height: 50%;
-    width: 70%;
-    /* border: 5px solid #DAAD86; */
-    padding: 10px 30px;
-    font-size: larger;
-    text-align: justify;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* -ms-transform: translate(-50%, -50%); */
-    transform: translate(-50%, -50%);
-}
+
 
