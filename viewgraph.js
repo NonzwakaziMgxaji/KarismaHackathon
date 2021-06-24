@@ -9,7 +9,6 @@ var selctx = document.getElementById("selectChart");
 var allctx = document.getElementById("allChart");
 const viewSelect = document.getElementById("chartDrop");
 const chartAdd = document.getElementById("chartAdd");
-const chartRemove = document.getElementById("chartRemove");
 
 viewSelect.innerHTML = "";
 
