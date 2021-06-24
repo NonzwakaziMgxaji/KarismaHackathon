@@ -1,20 +1,33 @@
 var selctx = document.getElementById("selectChart");
 var allctx = document.getElementById("allChart");
+const viewSelect = document.getElementById("chartDrop");
+const chartAdd = document.getElementById("chartAdd");
+const chartRemove = document.getElementById("chartRemove");
 
-localStorage.setItem("views", JSON.stringify({ view1: views, view2: views2, view3 : views3, view4 : views4}));
+viewSelect.innerHTML = "";
 
 const selectLabels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var selectData = [{
-    label: "video 1",
-    data: [11, 23, 13, 7, 10, 16, 57, 28, 19, 3, 11, 8],
-    backgroundColor:
-        randomBackgroud(),
-    borderColor:
-        randomBackgroud(),
-    borderWidth: 1
-}, {
-    label: "video 2",
-    data: [2, 12, 14, 19, 8, 27, 16, 5, 24, 13, 12, 21],
+var selectString = ["HTML & CSS"];
+
+var allData = [];
+var allLabels = [];
+
+var selectData = [];
+var keySelectData1 = [];
+
+var viewObj = JSON.parse(localStorage["views"]);
+var objLength = Object.keys(viewObj);
+
+var subKeys = Object.keys(viewObj["HTML & CSS"]);
+for (var i = 0; i < subKeys.length; i++) {
+    var currMonth = subKeys[i];
+    var selectedView = viewObj["HTML & CSS"];
+    keySelectData1.push(selectedView[currMonth]);
+};
+
+selectData = [{
+    label: "HTML & CSS",
+    data: keySelectData1,
     backgroundColor:
         randomBackgroud(),
     borderColor:
@@ -22,17 +35,12 @@ var selectData = [{
     borderWidth: 1
 }];
 
-var allData = [];
-var allLabels = [];
-
-var viewObj = JSON.parse(localStorage["views"]);
-var objLength = Object.keys(viewObj);
-
 for (var i = 0; i < objLength.length; i++) {
+    viewSelect.innerHTML += "<option>" + objLength[i] + "</option>";
 
     var keyData = [];
     var subKeys = Object.keys(viewObj[objLength[i]]);
-    allLabels = subKeys
+    allLabels = subKeys;
 
     for (var j = 0; j < subKeys.length; j++) {
         var currView = objLength[i];
@@ -52,8 +60,8 @@ for (var i = 0; i < objLength.length; i++) {
     });
 }
 
-
-var selectChart = new Chart(selctx, {
+var selectChart = new Chart(
+    document.getElementById("selectChart"), {
     type: "line",
     data: {
         labels: selectLabels,
@@ -74,3 +82,37 @@ function randomBackgroud() {
 
     return "#" + n.slice(0, 6);
 }
+
+chartAdd.addEventListener("click", () => {
+    var keySelectData2 = [];
+
+    selectString = viewSelect.value;
+    selectData = [];
+
+    var selectedView = viewObj[selectString];
+    var subKeys = Object.keys(selectedView);
+    for (var j = 0; j < subKeys.length; j++) {
+        var currMonth = subKeys[j];
+        keySelectData2[j] = (selectedView[currMonth]);
+    }
+
+    selectData = [{
+        label: selectString,
+        data: keySelectData2,
+        backgroundColor:
+            randomBackgroud(),
+        borderColor:
+            randomBackgroud(),
+        borderWidth: 1
+    }]
+
+    selectChart.destroy();
+
+    selectChart = new Chart(selctx, {
+        type: "line",
+        data: {
+            labels: selectLabels,
+            datasets: selectData
+        }
+    })
+})

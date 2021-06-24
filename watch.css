@@ -14,9 +14,16 @@
 }
 
 .chart {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   margin: auto;
+}
+
+@media (max-width: 425px) {
+  .chart {
+    width: 300px;
+    height: 150px;
+  }
 }
 
 #chartDrop {
@@ -25,4 +32,18 @@
 
 .chartDropDiv {
   text-align: center;
+}
+
+.chartBtns {
+  background: #daad86;
+  color: white;
+  border: #bc986a 1px solid;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2px 4px 2px 4px;
+}
+
+#chartBtns:hover {
+  background: #bc986a;
 }
