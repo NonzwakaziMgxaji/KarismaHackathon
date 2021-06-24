@@ -2,6 +2,7 @@ var video1 = document.querySelector(".video1");
 var video2 = document.querySelector(".video2");
 var video3 = document.querySelector(".video3");
 var video4 = document.querySelector(".video4");
+var list = document.getElementsByTagName("ul")
 
 document.body.addEventListener("load", () => {
     if (localStorage["views"]) {
@@ -107,4 +108,9 @@ video4.addEventListener("play", function () {
 
 video4.addEventListener("ended", () => {
     flagVid4 = false;
+})
+const listItems = list.children
+console.log(listItems);
+list.addEventListener("click", function (event) {
+    alert("hi")
 })
