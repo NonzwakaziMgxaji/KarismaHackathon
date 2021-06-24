@@ -14,7 +14,6 @@ nav{
     background: #DAAD86;
     height: 80px;
     width: 100%;
-    /* margin-bottom: 5px; */
 }
 
 @media (max-width: 952px){
@@ -29,7 +28,7 @@ nav{
     nav{
         background: #DAAD86;
         height: 80px;
-        width: 122%;
+        width: 100%;
     }
 }
 
@@ -110,6 +109,7 @@ ul{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    /* margin: 0 0 0 0; */
 }
 
 nav ul li{
@@ -182,6 +182,8 @@ div.example::after {
     width: 100%;
     height: 40px;
     background: #DAAD86;
+    /* padding: 0;
+    margin: 0; */
 }
 
 h2{
@@ -206,15 +208,39 @@ h2{
     /* -ms-transform: translate(-50%, -50%); */
     transform: translate(-50%, -50%);
 }
+
 @media (max-width: 425px){
-    .video, .text{
+    .video{
+        margin-left: auto;
+        margin-right: auto;
         display: block;
         width: 100%;
-        margin: auto;
         padding: 10px;
         flex-direction: column;
-
     }
+
+    .video1, .video2, .video3, .video4{
+        margin: 30px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .example{
+        margin: auto;
+        width: 93%;
+    }
+
+}
+
+@media screen and (min-width:426px) and (max-width:952px){
+    .example{
+        /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+        /* width: 70%; */
+    }
+
+}
 
     .text{
         display: block;
@@ -224,7 +250,7 @@ h2{
 
     p{
         text-align: justify;
-        width: 80%;
+        width: 100%;
     }
     .about{
         margin-top: 5px;
