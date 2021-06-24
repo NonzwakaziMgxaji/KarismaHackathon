@@ -133,5 +133,4 @@ video4.addEventListener("play", function () {
 
 video4.addEventListener("ended", () => {
     flagVid4 = false;
-}
-)
+})
