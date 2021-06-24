@@ -1,5 +1,4 @@
 document.body.onload = () => {
-    console.log("test");
     if (!localStorage["views"]) {
         localStorage.setItem("views", JSON.stringify({ "HTML & CSS": { "january": 404, "february": 350, "march": 300, "april": 12, "may": 6, "june": 674, "july": 40, "august": 200, "september": 350, "october": 450, "november": 700, "december": 1200 }, "JavaScript": { "january": 300, "february": 500, "march": 100, "april": 150, "may": 700, "june": 900, "july": 300, "august": 200, "september": 600, "october": 300, "november": 900, "december": 1800 }, "NodeJS": { "january": 130, "february": 99, "march": 160, "april": 100, "may": 60, "june": 99, "july": 150, "august": 180, "september": 200, "october": 120, "november": 100, "december": 96 }, "ExpressJS": { "january": 650, "february": 500, "march": 200, "april": 100, "may": 630, "june": 900, "july": 850, "august": 500, "september": 630, "october": 850, "november": 500, "december": 300 } }))
     }
@@ -9,7 +8,6 @@ var selctx = document.getElementById("selectChart");
 var allctx = document.getElementById("allChart");
 const viewSelect = document.getElementById("chartDrop");
 const chartAdd = document.getElementById("chartAdd");
-const chartRemove = document.getElementById("chartRemove");
 
 viewSelect.innerHTML = "";
 

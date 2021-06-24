@@ -28,7 +28,7 @@ nav{
     nav{
         background: #DAAD86;
         height: 80px;
-        width: 100%;
+        width: 122%;
     }
 }
 
@@ -192,9 +192,20 @@ h2{
     padding: 10px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 425px){
     .video, .text{
         display: block;
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        flex-direction: column;
+
+    }
+
+    .text{
+        display: block;
+        text-align: justify;
+        width: 80%;
     }
 }
 
