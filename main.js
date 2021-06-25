@@ -54,8 +54,7 @@ video1.addEventListener("play", function () {
 
 video1.addEventListener("ended", () => {
     flagVid1 = false;
-}
-)
+})
 
 video2.addEventListener("play", function () {
 
@@ -80,8 +79,7 @@ video2.addEventListener("play", function () {
 
 video2.addEventListener("ended", () => {
     flagVid2 = false;
-}
-)
+})
 
 video3.addEventListener("play", function () {
 
@@ -106,8 +104,7 @@ video3.addEventListener("play", function () {
 
 video3.addEventListener("ended", () => {
     flagVid3 = false;
-}
-)
+})
 
 video4.addEventListener("play", function () {
 

@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="./upload.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <link rel="stylesheet" href="./upload.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
+</head>
 
-      <label class="logo"><a href="index.html">Karisma</a></label>
+<body>
+  <nav>
+    <input type="checkbox" id="check" />
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="watch.html">Stats</a></li>
-        <li><a class="active" href="upload.html">Uploads</a></li>
-      </ul>
-    </nav>
-    <br>
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
 
-    <div class="container">
-      <h1>UPLOAD VID</h1>
-      <div class="vid" width="320rem" height="560rem">
-        <img src="../basic_website/resized images/mountain.jpg" alt="" />
-      </div>
-      <div class="uploading">
-        <input type="file" name="file" id="file" />
-        <button class="upload">Upload</button>
-      </div>
-      <div class="replacement">
-        <select name="lecture" id="lectures">
-          <option value="javaScript">JavaScript</option>
-          <option value="python">Python</option>
-          <option value="django">Django</option>
-          <option value="Node">Node.js</option>
-          <option value="express">Express</option>
-        </select>
-        <button class="replace">Replace</button>
-      </div>
-      <button class="cancel">Cancel</button>
+    <label class="logo"><a href="index.html">Karisma</a></label>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="watch.html">Stats</a></li>
+      <li><a class="active" href="upload.html">Uploads</a></li>
+    </ul>
+  </nav>
+
+  <br>
+
+  <div class="container">
+    <h1>UPLOAD VID</h1>
+
+    <div class="vid" width="320rem" height="560rem">
+      <img src="../basic_website/resized images/mountain.jpg" alt="" />
     </div>
-    <script src="./upload.js"></script>
-  </body>
+
+    <div class="uploading">
+      <input type="file" name="file" id="file" />
+      <button class="upload">Upload</button>
+    </div>
+
+    <div class="replacement">
+      <select name="lecture" id="lectures">
+        <option value="javaScript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="django">Django</option>
+        <option value="Node">Node.js</option>
+        <option value="express">Express</option>
+      </select>
+      <button class="replace">Replace</button>
+    </div>
+
+    <button class="cancel">Cancel</button>
+  </div>
+
+  <script src="./upload.js"></script>
+
+  <!-- <div class="footer">
+    <h4>Karisma with a K</h4>
+  </div> -->
+</body>
+
 </html>
